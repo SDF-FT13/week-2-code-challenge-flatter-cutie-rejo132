@@ -38,3 +38,14 @@ function displayCharacterDetails(character) {
       <p>Votes: <span id="vote-count">${character.votes}</span></p>
     `;
   }
+
+
+// Handle votes form submission
+votesForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!currentCharacter) return;
+  
+    const voteCountElement = document.getElementById("vote-count");
+    const additionalVotes = parseInt(votesInput.value || "0");
+    const newVotes = currentCharacter.votes + additionalVotes;})
+    
