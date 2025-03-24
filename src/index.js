@@ -14,3 +14,16 @@ const characterForm = document.getElementById("character-form");
 let currentCharacter = null;
 
 
+// Fetch all characters and populate the character bar
+function fetchCharacters() {
+    fetch(BASE_URL)
+      .then((response) => response.json())
+      .then((characters) => {
+        characters.forEach((character) => {
+          const span = document.createElement("span");
+          span.textContent = character.name;
+          span.addEventListener("click", () => displayCharacterDetails(character));
+          characterBar.appendChild(span);
+        });
+      });
+  }
