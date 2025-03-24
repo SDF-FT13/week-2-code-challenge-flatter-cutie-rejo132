@@ -72,3 +72,13 @@ resetButton.addEventListener("click", () => {
     const voteCountElement = document.getElementById("vote-count");
     voteCountElement.textContent = "0";
     currentCharacter.votes = 0; })
+
+    // Update the votes on the server
+  fetch(`${BASE_URL}/${currentCharacter.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ votes: 0 }),
+  });
+
