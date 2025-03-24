@@ -63,3 +63,12 @@ votesForm.addEventListener("submit", (event) => {
   });
 
   votesInput.value = ""; // Clear the input field
+
+
+  // Handle reset votes button click
+resetButton.addEventListener("click", () => {
+    if (!currentCharacter) return;
+  
+    const voteCountElement = document.getElementById("vote-count");
+    voteCountElement.textContent = "0";
+    currentCharacter.votes = 0; })
