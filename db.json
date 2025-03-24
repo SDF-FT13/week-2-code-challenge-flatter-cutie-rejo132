@@ -3,19 +3,19 @@
     {
       "id": 1,
       "name": "Mr. Cute",
-      "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+      "image": "https://media.giphy.com/media/SHdwS47nztG2MHCOTH/giphy.gif?cid=ecf05e47rcc9593kzzvzsbpvi1p80pbj2j9iuqj9j3dyxknm&ep=v1_gifs_search&rid=giphy.gif&ct=g",
       "votes": 0
     },
     {
       "id": 2,
       "name": "Mx. Monkey",
-      "image": "https://thumbs.gfycat.com/FatalInnocentAmericanshorthair-max-1mb.gif",
+      "image": "https://media0.giphy.com/media/ZqHGX9HvKKlRjmOQvR/200w.gif",
       "votes": 0
     },
     {
       "id": 3,
       "name": "Ms. Zebra",
-      "image": "https://media2.giphy.com/media/20G9uNqE3K4dRjCppA/source.gif",
+      "image": "https://media2.giphy.com/media/20G9uNqE3K4dRjCppA/200w.gif",
       "votes": 0
     },
     {
@@ -28,6 +28,12 @@
       "id": 5,
       "name": "Mme. Panda",
       "image": "https://media.giphy.com/media/ALalVMOVR8Qw/giphy.gif",
+      "votes": 0
+    },
+    {
+      "id": "7f11",
+      "name": "Mr.tiger",
+      "image": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTU2bXRjcXJ5aGwzamRoa3VmbHFlZG80MWhod2YycTBkOWk2d3BxbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wkSWRQ0JDj0z7QiWsv/giphy.webp",
       "votes": 0
     }
   ]
