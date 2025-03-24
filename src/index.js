@@ -8,3 +8,9 @@ const votesForm = document.getElementById("votes-form");
 const votesInput = document.getElementById("votes");
 const resetButton = document.getElementById("reset-btn");
 const characterForm = document.getElementById("character-form");
+
+
+// Track the currently selected character
+let currentCharacter = null;
+
+
