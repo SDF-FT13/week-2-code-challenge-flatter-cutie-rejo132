@@ -49,3 +49,17 @@ votesForm.addEventListener("submit", (event) => {
     const additionalVotes = parseInt(votesInput.value || "0");
     const newVotes = currentCharacter.votes + additionalVotes;})
     
+
+   // Update the votes in the UI and on the server
+  voteCountElement.textContent = newVotes;
+  currentCharacter.votes = newVotes;
+
+  fetch(`${BASE_URL}/${currentCharacter.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ votes: newVotes }),
+  });
+
+  votesInput.value = ""; // Clear the input field
