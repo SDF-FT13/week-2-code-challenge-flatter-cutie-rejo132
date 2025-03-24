@@ -27,3 +27,14 @@ function fetchCharacters() {
         });
       });
   }
+
+
+  // Display character details in the detailed-info div
+function displayCharacterDetails(character) {
+    currentCharacter = character; // Set the current character
+    detailedInfo.innerHTML = `
+      <h2>${character.name}</h2>
+      <img src="${character.image}" alt="${character.name}">
+      <p>Votes: <span id="vote-count">${character.votes}</span></p>
+    `;
+  }
