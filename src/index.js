@@ -82,3 +82,15 @@ resetButton.addEventListener("click", () => {
     body: JSON.stringify({ votes: 0 }),
   });
 
+
+  // Handle new character form submission
+characterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const image = event.target.image.value;
+  
+    const newCharacter = {
+      name,
+      image,
+      votes: 0,
+    };})
